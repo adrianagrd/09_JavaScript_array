@@ -2,6 +2,7 @@ import { extractCountriesWithFiveCharactersOrFewer } from "./extractCountriesWit
 
 describe("extractCountriesWithFiveCharactersOrFewer", () => {
   test("returns an array of countries with five characters or fewer", () => {
+    // Arrange
     const COUNTRIES = [
       "United Kingdom",
       "Italy",
@@ -10,7 +11,11 @@ describe("extractCountriesWithFiveCharactersOrFewer", () => {
       "Greece",
     ];
     const expected = ["Italy"];
-    const actual = extractCountriesWithFiveCharactersOrFewer(COUNTRIES);
-    expect(actual).toEqual(expected);
+
+    // Act
+    const result = extractCountriesWithFiveCharactersOrFewer(COUNTRIES);
+
+    // Assert
+    expect(result).toEqual(expected);
   });
 });
