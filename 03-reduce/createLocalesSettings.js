@@ -4,10 +4,10 @@
  * expected:
  * {
  *  "EN": {id: 0, enabled: true},
- *  "US": {id: 1, enabled: false},
- *  "EN": {id: 2, enabled: false},
- *  "EN": {id: 3, enabled: false},
- *  "EN": {id: 4, enabled: false},
+ *  "GR": {id: 1, enabled: false},
+ *  "FR": {id: 2, enabled: false},
+ *  "IT": {id: 3, enabled: false},
+ *  "PT": {id: 4, enabled: false},
  * }
  */
 
@@ -17,6 +17,6 @@ export const createLocalesSettings = (locales) => {
   const localesSettings = locales.reduce((acc, locale, index) => {
     acc[locale] = { id: index, enabled: index === 0 };
     return acc;
-  });
+  }, {});
   return localesSettings;
 };
