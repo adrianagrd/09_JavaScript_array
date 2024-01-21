@@ -9,12 +9,9 @@
 const MONKEYS = ["🐒", "🦍", "🦧"];
 
 export const feedMonkeys = (fruit) => {
-  const monkeys = [];
-  const collectionlength = MONKEYS.length;
+  const mapmonkeys = MONKEYS.map((monkey) => {
+    return `${monkey} ${fruit}`;
+  });
 
-  for (let index = 0; index < collectionlength; index++) {
-    const monkey = `${MONKEYS[index]} ${fruit}`; // 🐒 🍌
-    monkeys.push(monkey);
-  }
-  return monkeys;
+  return mapmonkeys;
 };
