@@ -1,4 +1,4 @@
-import { customersWhoBelongToMembership } from "./customersWhoBelongToMembership";
+import { customersWhoBelongToMembership } from "./customersWhoBelongToMembership.js";
 
 describe("customersWhoBelongToMembership", () => {
   test("returns an array with customers who belong to the club", () => {
@@ -32,7 +32,7 @@ describe("customersWhoBelongToMembership", () => {
     ];
     // Act
     const result = customersWhoBelongToMembership(CUSTOMERS);
-    // Assert
+    // Assert()
     expect(result).toEqual(expected);
   });
 });
