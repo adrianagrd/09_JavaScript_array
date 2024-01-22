@@ -1,4 +1,4 @@
-import { customersWhoBelongToMembership } from "./customersWhoBelongToMembership.js";
+import { customersWhoBelongToMembership } from "./customersWhoBelongToMembership";
 
 describe("customersWhoBelongToMembership", () => {
   test("returns an array with customers who belong to the club", () => {
