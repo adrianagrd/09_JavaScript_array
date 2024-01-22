@@ -32,7 +32,7 @@ describe("customersWhoBelongToMembership", () => {
     ];
     // Act
     const result = customersWhoBelongToMembership(CUSTOMERS);
-    // Assert
+    // Assert()
     expect(result).toEqual(expected);
   });
 });
